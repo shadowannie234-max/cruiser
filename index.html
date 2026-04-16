@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- GitHub Pages: /user/repo must resolve like /user/repo/ so assets/… loads under the repo. -->
+  <script>
+    (function () {
+      if (location.protocol === "file:") return;
+      var path = location.pathname.replace(/\/index\.html?$/i, "");
+      if (!path.endsWith("/")) path += "/";
+      var base = document.createElement("base");
+      base.href = path;
+      var v = document.querySelector('meta[name="viewport"]');
+      if (v) v.insertAdjacentElement("afterend", base);
+      else document.head.prepend(base);
+    })();
+  </script>
+  <title>Cruiser — Embody the Tranquility</title>
+  <meta name="description" content="Water bottles and thermoses crafted for calm, everyday habits. Embody the Tranquility." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">
+      <img class="logo__img" src="assets/nav-cruiser-logo.png" alt="" aria-hidden="true" />
+      <span>Cruiser</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#bottles">Bottles</a>
+      <a href="#thermoses">Thermoses</a>
+      <a href="#habits">Habits</a>
+      <a href="#cruiser-bottles">Our bottles</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Hero video: Mixkit — “The sea seen from an alone ferry boat” (on-board POV; mixkit.co/free-stock-video/the-sea-seen-from-an-alone-ferry-boat-14022/) -->
+      <div class="hero__media" aria-hidden="true">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.jpg"
+        >
+          <source src="assets/hero-cruise-deck-view.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Water bottles &amp; thermoses</p>
+        <h1 class="hero__title">Embody the Tranquility</h1>
+        <p class="hero__lead">
+          Hydration as a quiet pause — vessels designed for clarity of mind and steadiness of temperature, wherever the day takes you.
+        </p>
+        <a class="btn btn--primary" href="#bottles">Explore the collection</a>
+      </div>
+    </section>
+
+    <section id="philosophy" class="section section--soft reveal">
+      <div class="container narrow">
+        <h2 class="section__title">Calm, carried with you</h2>
+        <p class="section__text">
+          A good bottle does more than hold liquid. It slows the moment between sips. Our water bottles favor light weight and pure lines; our thermoses keep heat and cold without fuss — so you can focus on breath, work, or the view out the window.
+        </p>
+      </div>
+    </section>
+
+    <section id="bottles" class="section reveal reveal--cards">
+      <div class="container">
+        <h2 class="section__title">Water bottles</h2>
+        <p class="section__subtitle">Glass-like clarity. Everyday durability.</p>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__visual card__visual--mist" aria-hidden="true">
+              <img
+                class="card__visual-img"
+                src="assets/bottle-dusty-rose.png"
+                width="400"
+                height="512"
+                alt=""
+                decoding="async"
+              />
+            </div>
+            <h3 class="card__title">Mist 24</h3>
+            <p class="card__desc">Slim stainless body, soft-matte finish, leak-tested cap. For commutes and long walks.</p>
+            <span class="card__tag">24 oz</span>
+          </article>
+          <article class="card">
+            <div class="card__visual card__visual--tide" aria-hidden="true">
+              <img
+                class="card__visual-img"
+                src="assets/bottle-tide-wide.png"
+                width="400"
+                height="600"
+                alt=""
+                decoding="async"
+              />
+            </div>
+            <h3 class="card__title">Tide Wide</h3>
+            <p class="card__desc">Wide mouth for ice and citrus. Powder coat that ages gracefully.</p>
+            <span class="card__tag">32 oz</span>
+          </article>
+          <article class="card">
+            <div class="card__visual card__visual--cruiser" aria-hidden="true">
+              <img
+                class="card__visual-img"
+                src="assets/bottle-cruiser-glass.png"
+                width="400"
+                height="600"
+                alt=""
+                decoding="async"
+              />
+            </div>
+            <h3 class="card__title">Cruiser Glass</h3>
+            <p class="card__desc">Borosilicate glass with a protective sleeve. For desks and evening wind-down.</p>
+            <span class="card__tag">20 oz</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="thermoses" class="section section--muted reveal reveal--features">
+      <div class="container">
+        <h2 class="section__title">Thermoses</h2>
+        <p class="section__subtitle">Heat that holds. Cold that lasts.</p>
+        <div class="grid grid--2">
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">◈</div>
+            <h3 class="feature__title">Dawn Flask</h3>
+            <p class="feature__text">Double-wall vacuum, 12-hour heat retention. Rounded lip for comfortable sipping on chilly mornings.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">◇</div>
+            <h3 class="feature__title">Harbor Mug</h3>
+            <p class="feature__text">Insulated tumbler with a sliding lid. Keeps coffee honest and tea steamy through long afternoons.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habits" class="section reveal reveal--split">
+      <div class="container split">
+        <div class="split__content">
+          <h2 class="section__title">A small habit</h2>
+          <p class="section__text">
+            Fill your bottle the night before. In the morning, listen for the soft click of the cap. Let the first sip mark the start of something unhurried. Tranquility is not loud — it is the habit of returning to yourself, again and again.
+          </p>
+          <ul class="list-check">
+            <li>BPA-free materials across the line</li>
+            <li>Recyclable packaging where possible</li>
+            <li>Designed to outlast trends</li>
+          </ul>
+        </div>
+        <div class="split__panel" aria-hidden="true">
+          <blockquote class="quote">
+            <p>“The bottle is empty until you fill it — then it holds your whole day.”</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="cruiser-bottles" class="section section--muted bottle-carousel-section reveal" aria-labelledby="cruiser-bottles-heading">
+      <div class="container">
+        <h2 id="cruiser-bottles-heading" class="section__title">The bottles</h2>
+        <p class="bottle-carousel-section__intro">
+          Same Cruiser design in four finishes — use the arrows to browse each bottle.
+        </p>
+        <div
+          class="bottle-carousel"
+          data-bottle-carousel
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Cruiser bottle lineup"
+        >
+          <div class="bottle-carousel__backdrop" data-bottle-backdrop aria-hidden="true"></div>
+          <button type="button" class="bottle-carousel__arrow bottle-carousel__arrow--prev" aria-controls="bottle-carousel-panel" aria-label="Previous bottle">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="bottle-carousel__panel" id="bottle-carousel-panel">
+            <div class="bottle-carousel__stage">
+              <div class="bottle-carousel__perspective">
+                <div class="bottle-carousel__flip" data-bottle-flip>
+                  <div class="bottle-carousel__stack">
+                    <img
+                      class="bottle-carousel__img bottle-carousel__img--a"
+                      src="assets/bottle-slate-blue.png"
+                      width="400"
+                      height="400"
+                      alt="Cruiser water bottle, slate blue-grey matte with Cruiser logo"
+                      decoding="async"
+                    />
+                    <img
+                      class="bottle-carousel__img bottle-carousel__img--b"
+                      src="assets/bottle-slate-blue.png"
+                      width="400"
+                      height="400"
+                      alt=""
+                      decoding="async"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="bottle-carousel__caption" aria-live="polite">Cruiser · Slate</p>
+          </div>
+          <button type="button" class="bottle-carousel__arrow bottle-carousel__arrow--next" aria-controls="bottle-carousel-panel" aria-label="Next bottle">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band reveal">
+      <div class="container cta-band__inner">
+        <p class="cta-band__slogan">Embody the Tranquility</p>
+        <a class="btn btn--ghost" href="mailto:hello@cruiser.example">Request a catalog</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">Cruiser</p>
+      <p class="site-footer__note">A demo site about water bottles and thermoses.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
